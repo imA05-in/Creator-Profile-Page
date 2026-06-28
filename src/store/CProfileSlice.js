@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import user from "../assets/user.png"
 const CProfileSlice = createSlice({
     name:"CProfileSlice",
     initialState:{
@@ -7,6 +7,7 @@ const CProfileSlice = createSlice({
             {
                 profileId: 1,
                 name: "Lakshay Choudhary",
+                image:user,
                 age: 28,
                 genre: ["comedy", "critic", "entertainment"],
                 youtubeFollowers: "3.46M",
@@ -25,6 +26,7 @@ const CProfileSlice = createSlice({
             {
                 profileId: 2,
                 name: "creator 2",
+                 image:user,
                 age: 28,
                 genre: ["comedy","review",],
                 youtubeFollowers: "6M",

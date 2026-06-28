@@ -19,7 +19,7 @@ export default function CreatorCard({ label }) {
     const data = useSelector((state)=>state?.profiles.filter((profile)=>profile.profileId == slug))
     const profile = data[0]
     return (
-    <div className="border w-full h-full bg-white">
+    <div className="border w-full h-full">
       <div>{profile.name}</div>
     </div>
   );
