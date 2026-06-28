@@ -52,10 +52,16 @@ const CProfileSlice = createSlice({
         },
         clearList: function(state){
             state.list = []
+        },
+        getProfile:function(state,action){
+            const pf = state.profiles.filter((profile)=>profile.profileId == action.payload.id)
+            console.log(pf);
+            
+            return pf
         }
     }
 })
 
-export const {addToList,removeFromList,clearList} = CProfileSlice.actions
+export const {addToList,removeFromList,clearList,getProfile} = CProfileSlice.actions
 
 export default CProfileSlice.reducer
