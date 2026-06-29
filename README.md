@@ -10,16 +10,24 @@ This project displays clickable creator cards. Each card navigates to a detail v
 
 ## Key Features
 
-- Clickable creator cards with profile navigation
-- Detailed creator introduction and bio
-- Social media overview with follower counts
-- Audience insights and demographic data
-- Previous brand collaborations history
-- Performance metrics for content impact
-- Contact / collaboration CTA sections
-- Responsive layout with Tailwind CSS styling
-- State managed using Redux Toolkit
-- Routing with React Router v8
+On clicking the cards its lead to a section containg following information.
+
+- Creator introduction
+- Social media overview
+- Audience insights
+- Previous brand collaborations
+- Performance metrics
+- Contact / Collaboration CTA
+
+
+I have used redux to store the dummy data of creators, which can be replaced with custom api/hook in future (if required), and would need to fetch the data only once, making it easier on the servers.
+
+From redux i have imported data in only one component i.e. /src/pages/Content.jsx and have passed down values to other components called inside it.
+
+then for components i made Box and BoxOWO (object within object) and reused them for Components like CreatorInro, PerformaceMetrices, etc, to avoid repeating the code. 
+
+Further more i haved also used react-router to perform the client side routing.
+
 
 ## Tech Stack
 
