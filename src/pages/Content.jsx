@@ -10,15 +10,15 @@ export default function Content() {
     <div className="h-full py-4 flex flex-col md:flex-row gap-2 md:gap-10 justify-evenly flex-wrap ">
       {data.map((profile) => (
         <NavLink
-          className={`bg-gray-100 border-2 border-[#2A2F3A] rounded-xl px-2 flex items-center justify-center h-full md:w-100 bg-linear-to-t from-black/60 to-black/10 active:outline`}
+          className={`bg-neutral-400 border-2 border-neutral-300 rounded-xl px-2 flex items-center justify-center h-full md:w-100 bg-linear-to-t from-black/60 to-black/10 active:outline`}
           key={profile.profileId}
           onClick={() => navigate(`/content/${profile.profileId}`)}
         >
           <div className="w-full h-full py-4 flex flex-col justify-center items-center ">
             <div className="">
-              <img  src={profile.image} alt="" className="w-full h-full" />
+              <img  src={profile.image} alt="" className="w-full h-full rounded-t-2xl rounded-b min-w-95 max-w-100"  />
             </div>
-            <div className="text-3xl relative bottom-10 font-extrabold text-white font-display w-full pl-2 flex text-center  bg-black/20 rounded backdrop-blur">
+            <div className="text-3xl relative bottom-10 font-extrabold text-white font-display w-full pl-2 flex text-center  bg-black/20 rounded-xl backdrop-blur justify-center border border-neutral-300">
               {profile.name.toUpperCase()}
             </div>
             <div className="flex border-2 rounded-2xl border-[#2A2F3A]  w-full justify-evenly  bg-white/5 backdrop-blur-md items-center">

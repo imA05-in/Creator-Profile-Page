@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import user from "../assets/user.png";
 import lImage from "../assets/image.png"
+import anshrma from "../assets/ansma.png"
 
 const CProfileSlice = createSlice({
   name: "CProfileSlice",
@@ -71,7 +72,7 @@ const CProfileSlice = createSlice({
       {
         profileId: 2,
         name: "Ananya Sharma",
-        image: user,
+        image: anshrma,
         age: 26,
         genre: ["Lifestyle", "Fashion"],
 

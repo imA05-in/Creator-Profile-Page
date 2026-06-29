@@ -19,7 +19,7 @@ export default function CreatorCard({ label }) {
     const data = useSelector((state)=>state?.profiles.filter((profile)=>profile.profileId == slug))
     const profile = data[0]
     return (
-    <div className="backdrop-blur bg-neutral-800/50 justify-start md:px-10 md:p-6 md:gap-6 flex flex-col  rounded-lg p-2 w-full h-full max-w-6xl text-neutral-50 gap-4 md:flex-row flex-wrap ">
+    <div className=" backdrop-blur bg-neutral-800/50 justify-start md:px-10 md:p-6 md:gap-6 flex flex-col  rounded-lg p-2 w-full h-full max-w-6xl text-neutral-50 gap-4 md:flex-row flex-wrap ">
       <div className="w-full h-full px-2">
         <CreatorIntro data={profile}/>
       </div>
