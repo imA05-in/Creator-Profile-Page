@@ -25,7 +25,7 @@ export default function CreatorIntro({ data }) {
           <div key={lang}>{lang}</div>
         ))}
       </div>
-      <div className="flex gap-2 flex-wrap border-b-gray-100/50 border-b">ContentStyle: 
+      <div className="flex gap-2 flex-wrap border-b-gray-100/50 border-b">Content Style: 
         {data.creatorIntroduction.contentStyle.map((contentStyle) => (
           <div key={contentStyle}>{contentStyle}</div>
         ))}
