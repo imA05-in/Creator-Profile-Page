@@ -2,7 +2,7 @@
 
 export default function BoxOWO({ label, data }) {
   return (
-    <div className="mx-2 bg-neutral-500 border border-neutral-300 rounded-2xl p-4 max-w-100 min-h-55">
+    <div className="mx-2 bg-neutral-500/50 border border-neutral-300 rounded-2xl p-4 max-w-100 min-h-55">
       <div className="underline decoration-neutral-50/50 pb-4">
         {label}
       </div>

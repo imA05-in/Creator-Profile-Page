@@ -10,7 +10,7 @@ export default function Content() {
     <div className="h-full py-4 flex flex-col md:flex-row gap-2 md:gap-10 justify-evenly flex-wrap ">
       {data.map((profile) => (
         <NavLink
-          className={`bg-neutral-400 border-2 border-neutral-300 rounded-xl px-2 flex items-center justify-center h-full md:w-100 bg-linear-to-t from-black/60 to-black/10 active:outline`}
+          className={`bg-neutral-500 border-2 border-neutral-300 rounded-xl px-2 flex items-center justify-center h-full md:w-100 bg-linear-to-t from-black/60 to-black/10 active:outline`}
           key={profile.profileId}
           onClick={() => navigate(`/content/${profile.profileId}`)}
         >

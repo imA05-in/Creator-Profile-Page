@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html{
-    background-color: #171719;
+    background-color: #0A0A0A;
 }; 
 @theme{
     --color-neutral-900: #0A0A0A; 
