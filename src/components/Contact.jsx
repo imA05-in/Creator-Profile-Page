@@ -1,5 +1,7 @@
-export default function Contact(){
+import Box from "./Box";
+
+export default function Contact({data}){
     return(<div>
-        contact
+        <Box data={data} label={"Contact"}/>
     </div>)
 }
