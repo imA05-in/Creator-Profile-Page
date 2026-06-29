@@ -1,6 +1,7 @@
 # Creator Profile
 Link: [Creator Profile Page](https://creator-profile-page.vercel.app)
 A React-based creator profile showcase built with Vite, React Router, Redux Toolkit, and Tailwind CSS.
+NOTE: only 2 profile images are used, rest profiles are compeletly fictional
 
 ## Overview
 
