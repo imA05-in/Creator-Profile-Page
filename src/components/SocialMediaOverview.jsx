@@ -1,5 +1,7 @@
-export default function SocialMediaOverview(){
+import BoxOWO from "./BoxOWO";
+
+export default function SocialMediaOverview({data}){
     return(<div>
-        SocialMediaOverview
+        <BoxOWO label="Social Media Overview" data={data}/>
     </div>)
 }
