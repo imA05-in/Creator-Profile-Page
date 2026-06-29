@@ -23,18 +23,15 @@ export default function CreatorCard({ label }) {
       <div className="w-full h-full px-2">
         <CreatorIntro data={profile}/>
       </div>
-      <div className=" justify-start lg:justify-around md:flex-start flex flex-col md:flex-row flex-wrap w-full h-full gap-4 border-neutral-500 bg-neutral-600/50 backdrop-blur-2xl border py-2 rounded-xl">
+      <div className=" justify-start lg:justify-around md:flex-start flex flex-col md:flex-row flex-wrap w-full h-full gap-5 border-neutral-500 bg-neutral-600/50 backdrop-blur-2xl border py-2 rounded-xl">
       <div>
         <AudienceInsights data={profile.audienceInsights}/>
       </div>
+      <div className="hidden md:flex lg:hidden">
+<SocialMediaOverview data={profile.socialMediaOverview}/>
+      </div>
       <div>
         <Contact data={profile.contact} />
-      </div>
-      <div>
-        <PerformanceMetics data={profile.performanceMetrics}/>
-      </div>
-      <div>
-        <SocialMediaOverview data={profile.socialMediaOverview}/>
       </div>
       <div>
         <PreviousBrandCollabs data={profile.previousBrandCollaborations}/>
@@ -42,6 +39,14 @@ export default function CreatorCard({ label }) {
       <div>
         <CollabCTA data={profile.collaborationCTA}/>
       </div>
+      <div className="md:hidden lg:flex">
+        <SocialMediaOverview data={profile.socialMediaOverview}/>
+      </div>
+      
+      <div>
+        <PerformanceMetics data={profile.performanceMetrics}/>
+      </div>
+      
       </div>
     </div>
   );

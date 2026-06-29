@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import user from "../assets/user.png";
+import lImage from "../assets/image.png"
 
 const CProfileSlice = createSlice({
   name: "CProfileSlice",
@@ -7,8 +8,8 @@ const CProfileSlice = createSlice({
     profiles: [
       {
         profileId: 1,
-        name: "Lakshay Choudhary",
-        image: user,
+        name: "Lakshay Chaudhary",
+        image: lImage,
         age: 28,
         genre: ["Comedy", "Entertainment"],
 
@@ -21,13 +22,13 @@ const CProfileSlice = createSlice({
         },
 
         socialMediaOverview: {
-          youtube: {
+          YouTube: {
             followers: "3.46M",
           },
-          instagram: {
+          Instagram: {
             followers: "1.4M",
           },
-          twitter: {
+          Twitter: {
             followers: "250K",
           },
         },
@@ -40,15 +41,15 @@ const CProfileSlice = createSlice({
         },
 
         previousBrandCollaborations: [
-          { brand: "Skillshare", campaign: "Sponsored Integration", year: 2024 },
-          { brand: "NordVPN", campaign: "Dedicated Promotion", year: 2023 },
+          { Brand: "Skillshare", Campaign: "Sponsored Integration", Year: 2024 },
+          { Brand: "NordVPN", Campaign: "Dedicated Promotion", Year: 2023 },
         ],
 
         performanceMetrics: {
-          averageViews: "1.9M",
-          averageLikes: "180K",
-          engagementRate: "8.5%",
-          averageWatchTime: "9m 10s",
+          "Average Views": "1.9M",
+          "Average Likes": "180K",
+          "Engagement Rate": "8.5%",
+          "Average Watch Time": "9m 10s",
         },
 
         contact: {
@@ -58,12 +59,12 @@ const CProfileSlice = createSlice({
         },
 
         collaborationCTA: {
-          availableFor: [
+          "Available For": [
             "Brand Sponsorships",
             "Product Reviews",
             "Long-term Partnerships",
           ],
-          responseTime: "24-48 Hours",
+          "Response Time": "24-48 Hours",
         },
       },
 

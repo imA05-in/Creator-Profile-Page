@@ -16,9 +16,9 @@ export default function Content() {
         >
           <div className="w-full h-full py-4 flex flex-col justify-center items-center ">
             <div className="">
-              <img src={profile.image} alt="" className="w-full" />
+              <img  src={profile.image} alt="" className="w-full h-full" />
             </div>
-            <div className="text-3xl relative bottom-10 font-extrabold text-white font-display w-full pl-2 flex ">
+            <div className="text-3xl relative bottom-10 font-extrabold text-white font-display w-full pl-2 flex text-center  bg-black/20 rounded backdrop-blur">
               {profile.name.toUpperCase()}
             </div>
             <div className="flex border-2 rounded-2xl border-[#2A2F3A]  w-full justify-evenly  bg-white/5 backdrop-blur-md items-center">
