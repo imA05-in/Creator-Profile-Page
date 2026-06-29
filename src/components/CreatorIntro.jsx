@@ -4,7 +4,7 @@ export default function CreatorIntro({ data }) {
     <div className="rounded-2xl w-full flex flex-col gap-2 md:flex-row justify-between items-start h-full md:gap-10">
       <div className=" p-2 bg-linear-to-t from-black/70 to-black/10 rounded-2xl md:max-w-100 md:flex-row items-center w-full bg-neutral-400 border border-neutral-300">
       <div className="flex justify-center">
-        <img src={data.image} alt="img" className="md:min-w-95 min-w-75 rounded-2xl"/>
+        <img src={data.image} alt="img" className="md:min-w-95 min-w-70 rounded-2xl"/>
       </div>
         <div className="text-xl font-medium text-center relative bottom-5 bg-black/30 py-1 rounded-2xl backdrop-blur border-2 border-neutral-300">
           {data.name.toUpperCase()}
