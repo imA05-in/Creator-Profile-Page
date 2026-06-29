@@ -1,5 +1,7 @@
-export default function PerformanceMetics(){
+import Box from "./Box";
+
+export default function PerformanceMetics({data}){
     return(<div>
-        PerformanceMetics
+        <Box label={"Performace Metrics"} data={data}/>
     </div>)
 }
