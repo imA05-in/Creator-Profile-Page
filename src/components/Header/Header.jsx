@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="border-b bg-neutral-900 px-2 h-15 justify-around text-neutral-100 border-neutral-400 flex items-center">
+      <div className="border-b bg-neutral-900 px-2 h-15 justify-around text-neutral-100 border-neutral-400 flex items-center md:gap-10 lg:gap-0">
         <NavLink to="/" className="max-w-30">
           <img src={logo} alt="Creator Smela" />
         </NavLink>
