@@ -20,7 +20,7 @@ On clicking the cards its lead to a section containg following information.
 - Contact / Collaboration CTA
 
 
-I have used redux to store the dummy data of creators, which can be replaced with custom api/hook in future (if required), and would need to fetch the data only once, making it easier on the servers.
+I have used redux to store the dummy data of creators, which can be replaced with custom api/hook in future (if required), and would need to fetch the data only oncenp, making it easier on the servers.
 
 From redux i have imported data in only one component i.e. /src/pages/Content.jsx and have passed down values to other components called inside it.
 
